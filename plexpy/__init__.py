@@ -154,6 +154,7 @@ def initialize(config_file):
             return False
 
         if SNAP_MIGRATE:
+            # TODO: komuw, here 1
             snap_common = os.environ['SNAP_COMMON']
             old_data_dir = os.path.join(snap_common, 'Tautulli')
             CONFIG.HTTPS_CERT = CONFIG.HTTPS_CERT.replace(old_data_dir, DATA_DIR)
@@ -185,6 +186,7 @@ def initialize(config_file):
         logger.initLogger(console=not QUIET, log_dir=CONFIG.LOG_DIR if log_writable else None,
                           verbose=VERBOSE)
 
+        # TODO: komuw, here 3.
         os.environ['PLEXAPI_CONFIG_PATH'] = os.path.join(DATA_DIR, 'plexapi.config.ini')
         os.environ['PLEXAPI_LOG_PATH'] = os.path.join(CONFIG.LOG_DIR, 'plexapi.log')
         os.environ['PLEXAPI_LOG_LEVEL'] = 'DEBUG'

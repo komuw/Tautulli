@@ -53,6 +53,7 @@ def main():
     Tautulli application entry point. Parses arguments, setups encoding and
     initializes the application.
     """
+    # TODO: komuw, here 5.
 
     # Fixed paths to Tautulli
     if hasattr(sys, 'frozen') and hasattr(sys, '_MEIPASS'):
@@ -258,6 +259,7 @@ def main():
     if plexpy.DAEMON:
         plexpy.daemonize()
 
+    # TODO: komuw, here 6.
     # Read config and start logging
     plexpy.initialize(config_file)
 

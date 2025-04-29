@@ -10,6 +10,7 @@ import plexapi.const as const
 from plexapi.utils import SecretsFilter
 
 # Load User Defined Config
+# TODO: komuw, here 2.
 DEFAULT_CONFIG_PATH = os.path.expanduser('~/.config/plexapi/config.ini')
 CONFIG_PATH = os.environ.get('PLEXAPI_CONFIG_PATH', DEFAULT_CONFIG_PATH)
 CONFIG = PlexConfig(CONFIG_PATH)

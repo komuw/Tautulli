@@ -37,6 +37,7 @@ def bool_int(value):
     return int(bool(value))
 
 
+# TODO: komuw, here 4.
 FILENAME = "config.ini"
 
 _CONFIG_DEFINITIONS = {
